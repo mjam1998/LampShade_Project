@@ -25,7 +25,7 @@ namespace ServiceHost
         public void ConfigureServices(IServiceCollection services)
         {
             var connectionString = Configuration.GetConnectionString("LampShadeDb");
-            ShopManagementBootstrapper.Configure(services,connectionString);
+            ShopManagementBootstrapper.Configure(services, connectionString);
             services.AddRazorPages();
         }
 
@@ -53,6 +53,7 @@ namespace ServiceHost
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }

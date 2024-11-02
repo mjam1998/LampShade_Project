@@ -46,7 +46,11 @@ namespace ShopManagement.Infrastructure.Repository
                 CreationDate = x.CreationDate.ToString()
 
             });
-            query = query.Where(x => x.Name.Contains(serModel.Name));
+            if (!string.IsNullOrWhiteSpace(serModel.Name))
+            {
+                query = query.Where(x => x.Name.Contains(serModel.Name));
+            }
+
             return query.OrderByDescending(x => x.Id).ToList();
         }
 

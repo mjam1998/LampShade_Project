@@ -19,11 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM.Infrastructure", "SM.Infrastructure", "{A130076C-9BBF-4B93-92A5-226A402CE1D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Infrastructure", "ShopManagement.Infrastructure\ShopManagement.Infrastructure.csproj", "{330FACAA-32E7-44D1-B1A6-3CF286F16E99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Infrastructure", "ShopManagement.Infrastructure\ShopManagement.Infrastructure.csproj", "{330FACAA-32E7-44D1-B1A6-3CF286F16E99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagementConfiguration", "ShopManagementConfiguration\ShopManagementConfiguration.csproj", "{16FEBC00-51D9-4F52-8F06-B72A1261EECD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagementConfiguration", "ShopManagementConfiguration\ShopManagementConfiguration.csproj", "{16FEBC00-51D9-4F52-8F06-B72A1261EECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{D4802043-8B14-4A05-A23E-C298B2B71955}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{710C9638-4166-4DC1-8AD3-B8F6F3226017}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +55,10 @@ Global
 		{16FEBC00-51D9-4F52-8F06-B72A1261EECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16FEBC00-51D9-4F52-8F06-B72A1261EECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16FEBC00-51D9-4F52-8F06-B72A1261EECD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4802043-8B14-4A05-A23E-C298B2B71955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4802043-8B14-4A05-A23E-C298B2B71955}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4802043-8B14-4A05-A23E-C298B2B71955}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4802043-8B14-4A05-A23E-C298B2B71955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{710C9638-4166-4DC1-8AD3-B8F6F3226017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{710C9638-4166-4DC1-8AD3-B8F6F3226017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{710C9638-4166-4DC1-8AD3-B8F6F3226017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{710C9638-4166-4DC1-8AD3-B8F6F3226017}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,8 +4,10 @@ using Microsoft.Extensions.DependencyInjection;
 using ShopManagement.Application;
 using ShopManagement.Application.Contracts.ProductAppContract;
 using ShopManagement.Application.Contracts.ProductCategoryAppContract;
+using ShopManagement.Application.Contracts.ProductPictureAppContract;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
+using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure;
 using ShopManagement.Infrastructure.Repository;
 
@@ -19,6 +21,8 @@ namespace ShopManagementConfiguration
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductApplication, ProductApplication>();
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IProductPictureApplication, ProductPictureApplication>();
+            services.AddTransient<IProductPictureRepository, ProductPictureRepository>();
             services.AddDbContext<ShopContext>(x=>x.UseSqlServer(connectionString));
         }
     }

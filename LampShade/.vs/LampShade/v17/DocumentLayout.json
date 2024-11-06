@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "F:\\project .net\\LampShade\\LampShade\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{710C9638-4166-4DC1-8AD3-B8F6F3226017}|ServiceHost\\ServiceHost.csproj|f:\\project .net\\lampshade\\lampshade\\servicehost\\areas\\administration\\pages\\shop\\productpictures\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{710C9638-4166-4DC1-8AD3-B8F6F3226017}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\administration\\pages\\shop\\productpictures\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{710C9638-4166-4DC1-8AD3-B8F6F3226017}|ServiceHost\\ServiceHost.csproj|f:\\project .net\\lampshade\\lampshade\\servicehost\\areas\\administration\\pages\\shop\\productpictures\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{710C9638-4166-4DC1-8AD3-B8F6F3226017}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\administration\\pages\\shop\\productpictures\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{710C9638-4166-4DC1-8AD3-B8F6F3226017}|ServiceHost\\ServiceHost.csproj|f:\\project .net\\lampshade\\lampshade\\servicehost\\areas\\administration\\pages\\shop\\productpictures\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{710C9638-4166-4DC1-8AD3-B8F6F3226017}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\administration\\pages\\shop\\productpictures\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D896271-7112-4A5B-92AE-87A97394B8E7}|ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj|f:\\project .net\\lampshade\\lampshade\\shopmanagement.application.contracts\\productpictureappcontract\\createproductpicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D896271-7112-4A5B-92AE-87A97394B8E7}|ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj|solutionrelative:shopmanagement.application.contracts\\productpictureappcontract\\createproductpicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{710C9638-4166-4DC1-8AD3-B8F6F3226017}|ServiceHost\\ServiceHost.csproj|f:\\project .net\\lampshade\\lampshade\\servicehost\\areas\\administration\\pages\\shop\\slides\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{710C9638-4166-4DC1-8AD3-B8F6F3226017}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\administration\\pages\\shop\\slides\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,54 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "F:\\project .net\\LampShade\\LampShade\\ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Create.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Create.cshtml",
-              "ToolTip": "F:\\project .net\\LampShade\\LampShade\\ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Create.cshtml",
-              "RelativeToolTip": "ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T10:15:46.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\project .net\\LampShade\\LampShade\\ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Index.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Index.cshtml",
-              "ToolTip": "F:\\project .net\\LampShade\\LampShade\\ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Index.cshtml",
-              "RelativeToolTip": "ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Index.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAD0AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T10:15:43.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\project .net\\LampShade\\LampShade\\ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Edit.cshtml",
-              "ToolTip": "F:\\project .net\\LampShade\\LampShade\\ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Edit.cshtml",
-              "RelativeToolTip": "ServiceHost\\Areas\\Administration\\Pages\\Shop\\ProductPictures\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
+              "DocumentMoniker": "F:\\project .net\\LampShade\\LampShade\\ServiceHost\\Areas\\Administration\\Pages\\Shop\\Slides\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Administration\\Pages\\Shop\\Slides\\Edit.cshtml",
+              "ToolTip": "F:\\project .net\\LampShade\\LampShade\\ServiceHost\\Areas\\Administration\\Pages\\Shop\\Slides\\Edit.cshtml",
+              "RelativeToolTip": "ServiceHost\\Areas\\Administration\\Pages\\Shop\\Slides\\Edit.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFEAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T10:10:20.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateProductPicture.cs",
-              "DocumentMoniker": "F:\\project .net\\LampShade\\LampShade\\ShopManagement.Application.Contracts\\ProductPictureAppContract\\CreateProductPicture.cs",
-              "RelativeDocumentMoniker": "ShopManagement.Application.Contracts\\ProductPictureAppContract\\CreateProductPicture.cs",
-              "ToolTip": "F:\\project .net\\LampShade\\LampShade\\ShopManagement.Application.Contracts\\ProductPictureAppContract\\CreateProductPicture.cs",
-              "RelativeToolTip": "ShopManagement.Application.Contracts\\ProductPictureAppContract\\CreateProductPicture.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T10:03:56.879Z",
+              "WhenOpened": "2024-11-06T18:26:58.857Z",
               "EditorCaption": ""
             }
           ]

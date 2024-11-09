@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _0_Freamwork.Application;
 using _0_Freamwork.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.ProductAppContract;
@@ -60,7 +61,7 @@ namespace ShopManagement.Infrastructure.Repository
                 CategoryId=x.CategoryId,
                 Picture = x.Picture,
                 IsInStock = x.IsInStock,
-                CreationDate = x.CreationDate.ToString()
+                CreationDate = x.CreationDate.ToFarsi()
                 
             });
             if (!string.IsNullOrWhiteSpace(searchModel.Name))

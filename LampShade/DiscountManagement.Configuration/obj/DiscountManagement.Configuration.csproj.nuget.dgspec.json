@@ -249,6 +249,9 @@
             "projectReferences": {
               "F:\\project .net\\LampShade\\LampShade\\0_Freamwork\\0_Freamwork.csproj": {
                 "projectPath": "F:\\project .net\\LampShade\\LampShade\\0_Freamwork\\0_Freamwork.csproj"
+              },
+              "F:\\project .net\\LampShade\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "F:\\project .net\\LampShade\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }

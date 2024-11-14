@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Infrastructure.Configuration\InventoryManagement.Infrastructure.Configuration.csproj" />
     <ProjectReference Include="..\ShopManagementConfiguration\ShopManagementConfiguration.csproj" />
   </ItemGroup>
 

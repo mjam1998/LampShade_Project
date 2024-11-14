@@ -198,3 +198,13 @@ F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Adm
 F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\ColleagueDiscounts\Create.cshtml.g.cs
 F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\ColleagueDiscounts\Edit.cshtml.g.cs
 F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\ColleagueDiscounts\Index.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.dll
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.dll
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.pdb
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.dll
+F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.pdb

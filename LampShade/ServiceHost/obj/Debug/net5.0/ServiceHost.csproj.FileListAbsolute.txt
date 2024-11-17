@@ -208,3 +208,15 @@ F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManage
 F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
 F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.dll
 F:\project .net\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.pdb
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Create.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Edit.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Index.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Increase.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Reduce.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\OperationLog.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategoryWithProduct\_ProductCategoryWithProduct.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatesArrivals\_LatesArrivals.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\ProductCategory.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Menu\_Menu.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\_Footer.cshtml.g.cs
+F:\project .net\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Search.cshtml.g.cs

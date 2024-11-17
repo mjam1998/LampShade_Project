@@ -28,6 +28,18 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "F:\\project .net\\LampShade\\LampShade\\DiscontManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "F:\\project .net\\LampShade\\LampShade\\DiscontManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              },
+              "F:\\project .net\\LampShade\\LampShade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "F:\\project .net\\LampShade\\LampShade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              },
+              "F:\\project .net\\LampShade\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "F:\\project .net\\LampShade\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              },
+              "F:\\project .net\\LampShade\\LampShade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "F:\\project .net\\LampShade\\LampShade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+              },
               "F:\\project .net\\LampShade\\LampShade\\ShopManagement.Infrastructure\\ShopManagement.Infrastructure.csproj": {
                 "projectPath": "F:\\project .net\\LampShade\\LampShade\\ShopManagement.Infrastructure\\ShopManagement.Infrastructure.csproj"
               }
@@ -543,6 +555,9 @@
             "projectReferences": {
               "F:\\project .net\\LampShade\\LampShade\\0_Freamwork\\0_Freamwork.csproj": {
                 "projectPath": "F:\\project .net\\LampShade\\LampShade\\0_Freamwork\\0_Freamwork.csproj"
+              },
+              "F:\\project .net\\LampShade\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "F:\\project .net\\LampShade\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }

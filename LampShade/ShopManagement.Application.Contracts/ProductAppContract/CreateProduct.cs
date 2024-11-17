@@ -16,8 +16,7 @@ namespace ShopManagement.Application.Contracts.ProductAppContract
         public string Name { get;  set; }
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Code { get;  set; }
-        [Range(0,500000000,ErrorMessage = ValidationMessages.IsRequired)]
-        public double UnitPrice { get;  set; }
+       
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string ShortDescription { get;  set; }
         public string Description { get;  set; }

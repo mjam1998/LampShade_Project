@@ -34,7 +34,7 @@ namespace ShopManagement.Infrastructure.Repository
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
-                UnitPrice = x.UnitPrice,
+               
                 ShortDescription = x.ShortDescription
 
             }).FirstOrDefault(x => x.Id == id);
@@ -57,10 +57,10 @@ namespace ShopManagement.Infrastructure.Repository
                 Category = x.Category.Name,
                 Code = x.Code,
                 Name = x.Name,
-                UnitPrice = x.UnitPrice,
+               
                 CategoryId=x.CategoryId,
                 Picture = x.Picture,
-                IsInStock = x.IsInStock,
+               
                 CreationDate = x.CreationDate.ToFarsi()
                 
             });

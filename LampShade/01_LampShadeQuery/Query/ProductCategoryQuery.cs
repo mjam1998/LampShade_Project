@@ -30,7 +30,8 @@ namespace _01_LampShadeQuery.Query
             {
                 Id = x.Id,
                 Name = x.Name,
-                Picture = x.Picture,
+                Picture=x.Picture,
+              
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Slug = x.Slug

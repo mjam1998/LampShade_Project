@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using _0_Freamwork.Application;
+using Microsoft.AspNetCore.Http;
 using ShopManagement.Application.Contracts.ProductCategoryAppContract;
 
 namespace ShopManagement.Application.Contracts.ProductAppContract
@@ -20,7 +21,7 @@ namespace ShopManagement.Application.Contracts.ProductAppContract
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string ShortDescription { get;  set; }
         public string Description { get;  set; }
-        public string Picture { get;  set; }
+        public IFormFile Picture { get;  set; }
         public string PictureAlt { get;  set; }
         public string PictureTitle { get;  set; }
         [Range(1,1000000,ErrorMessage = ValidationMessages.IsRequired)]

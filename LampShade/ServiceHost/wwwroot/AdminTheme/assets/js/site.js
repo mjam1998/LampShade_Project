@@ -196,6 +196,36 @@ jQuery.validator.addMethod("maxFileSize",
         }
     });
 jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
+// این کد پایین برای ولیدیشن فایل fileExtentionLimit میباشد
+jQuery.validator.addMethod("fileExtentionLimit", function (value, element, params) {
+    // دریافت تمام فایل های آپلود شده
+    var files = $(element).get(0).files;
+    //اگر فایلی آپلود نشده باشد
+    if (files.length === 0) {
+        return true; // در صورتی که فایلی آپلود نشده باشد عملیات تایید را رد نمی کند.
+    }
+
+    // متغیری برای ذخیره ی پسوندهای مجاز
+    var allowedExtensions = ["png","jpeg","jpg"];
+    // متغیری برای ذخیره ی نتیجه ی تایید
+    var isValid = true;
+
+    // تکرار فایل های آپلود شده
+    $.each(files, function (index, file) {
+        // دریافت پسوند فایل
+        var fileExtension = file.name.substring(file.name.lastIndexOf('.') + 1).toLowerCase();
+
+        // بررسی اینکه آیا پسوند فایل در لیست پسوندهای مجاز وجود دارد
+        if ($.inArray(fileExtension, allowedExtensions) == -1) {
+            isValid = false;
+            return false; // برای خروج از حلقه
+        }
+    });
+
+    // بازگشت نتیجه ی تایید
+    return isValid;
+}, 'حداقل یک فایل دارای پسوند غیرمجاز است');
+jQuery.validator.unobtrusive.adapters.addBool("fileExtentionLimit");
 
 //jQuery.validator.addMethod("maxFileSize",
 //    function (value, element, params) {

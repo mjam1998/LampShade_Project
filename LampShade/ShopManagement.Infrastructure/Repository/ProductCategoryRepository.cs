@@ -35,7 +35,7 @@ namespace ShopManagement.Infrastructure.Repository
                 Description = x.Description,
                 Keywords = x.Keywords,
                 MetaDescription = x.MetaDescription,
-                Picture = x.Picture,
+              
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Slug = x.Slug
@@ -49,7 +49,8 @@ namespace ShopManagement.Infrastructure.Repository
             {
                 Id = x.Id,
                 Name = x.Name,
-                Picture = x.Picture,
+                Picture=x.Picture,
+              
                 CreationDate = x.CreationDate.ToFarsi()
 
             });
@@ -61,6 +62,9 @@ namespace ShopManagement.Infrastructure.Repository
             return query.OrderByDescending(x => x.Id).ToList();
         }
 
-        
+        public string GetSlugById(long id)
+        {
+            return _context.ProductCategories.Select(x => new { x.Id, x.Slug }).FirstOrDefault(x => x.Id == id).Slug;
+        }
     }
 }

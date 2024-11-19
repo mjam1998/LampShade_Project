@@ -12,10 +12,12 @@ namespace ShopManagement.Application
     public class ProductCategoryApplication:IProductCategoryApplication
     {
         private readonly IProductCategoryRepository _productCategoryRepository;
+        private readonly IFileUploader _fileUploader;
 
-        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository)
+        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository, IFileUploader fileUploader)
         {
             _productCategoryRepository = productCategoryRepository;
+            _fileUploader = fileUploader;
         }
 
         public OperationResult Create(CreateProductCategory command)
@@ -24,7 +26,9 @@ namespace ShopManagement.Application
             if (_productCategoryRepository.Exists(x=>x.Name==command.Name))
                 return operation.Failed("رکورد تکراری وارد شده دوباره تلاش کنید.");
             var slug = command.Slug.GenerateSlug();
-            var productCategory = new ProductCategory(command.Name, command.Description, command.Picture,
+            var picturePath = $"{command.Slug}";
+            var fileName = _fileUploader.Upload(command.Picture,picturePath);
+            var productCategory = new ProductCategory(command.Name, command.Description,fileName, 
                 command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug);
             _productCategoryRepository.Create(productCategory);
             _productCategoryRepository.SaveChanges();
@@ -46,7 +50,9 @@ namespace ShopManagement.Application
                 return operation.Failed("رکورد تکراری وارد شده دوباره تلاش کنید.");
             }
             var slug= command.Slug.GenerateSlug();
-            productCategory.Edit(command.Name,command.Description,command.Picture
+            var picturePath = $"{command.Slug}";
+            var fileName=_fileUploader.Upload(command.Picture, picturePath);
+            productCategory.Edit(command.Name,command.Description,fileName
                 ,command.PictureAlt,command.PictureTitle,command.Keywords,command.MetaDescription,slug);
             _productCategoryRepository.SaveChanges();
             return operation.Succedded();

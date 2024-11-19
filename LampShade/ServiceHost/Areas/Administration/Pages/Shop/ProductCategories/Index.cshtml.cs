@@ -1,4 +1,5 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using _0_Freamwork.Application;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ShopManagement.Application.Contracts.ProductCategoryAppContract;
@@ -40,8 +41,13 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
 
         public JsonResult OnPostEdit(EditProductCategory command)
         {
-            var result = _productCategoryApplication.Edit(command);
-            return new JsonResult(result);
+            //اتربیوت هایی که نوشتیم مثل fileExtention اگر ولید باشد دستور را اجرا میکند سرور ساید
+            
+            
+                var result = _productCategoryApplication.Edit(command);
+                return new JsonResult(result);
+            
+            
         }
     }
 }

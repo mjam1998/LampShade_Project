@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ShopManagement.Domain.ProductAgg;
 
+
 namespace ShopManagement.Domain.ProductCategoryAgg
 {
     public class ProductCategory : EntityBase
@@ -25,7 +26,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
             Products=new List<Product>();
         }
 
-        public ProductCategory(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug)
+        public ProductCategory(string name, string description,string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug)
         {
             Name = name;
             Description = description;
@@ -42,7 +43,11 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         {
             Name = name;
             Description = description;
-            Picture = picture;
+            if (!string.IsNullOrWhiteSpace(picture))
+            {
+                Picture = picture;
+            }
+            
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             Keywords = keywords;

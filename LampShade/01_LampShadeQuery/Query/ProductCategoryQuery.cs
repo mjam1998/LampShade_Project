@@ -100,7 +100,7 @@ namespace _01_LampShadeQuery.Query
         public ProductCategoryQueryModel GetProductCategoryWithProductsBy(string slug)
         {
             var inventory = _inventoryContext.Inventory.Select(x => new { x.ProductId, x.UnitPrice }).ToList();
-            var discount = _discountContext.CustomerDiscounts.Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now).Select(x => new { x.ProductId, x.DiscountRate }).ToList();
+            var discount = _discountContext.CustomerDiscounts.Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now).Select(x => new { x.ProductId, x.DiscountRate,x.EndDate }).ToList();
             var category = _context.ProductCategories.Include(x => x.Products).ThenInclude(x => x.Category).Select(x => new ProductCategoryQueryModel
             {
                 Id = x.Id,
@@ -124,7 +124,8 @@ namespace _01_LampShadeQuery.Query
                         {
                             int discountRate = disc.DiscountRate;
                             product.DiscountRate = discountRate;
-                            product.HasDiscount = discountRate > 0;
+                        product.DiscountExpireDate = disc.EndDate.ToDiscountFormat();
+                        product.HasDiscount = discountRate > 0;
                             var discountAmount = Math.Round((price * discountRate) / 100);
                             product.PriceWithDiscount = (price - discountAmount).ToMoney();
                         }

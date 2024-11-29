@@ -1,5 +1,7 @@
 ﻿
 
+using System.Collections.Generic;
+
 namespace _01_LampShadeQuery.Contracts.Product
 {
     public class ProductQueryModel
@@ -19,6 +21,15 @@ namespace _01_LampShadeQuery.Contracts.Product
         public string DiscountExpireDate { get; set; }
         public string  ShortDescription { get; set; }
         public string CategorySlug { get; set; }
+       
+        public string Code { get;  set; }
+        public bool InStock { get; set; }
+        public string Description { get;  set; }
+                     
+        public string Keywords { get;  set; }
+        public string MetaDescription { get;  set; }
+        public List<ProductPictureQueryModel> ProductPictures { get; set; }
+        public List<CommentQueryModel> Comments { get; set; }
 
     }
 }

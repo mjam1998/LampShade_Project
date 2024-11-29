@@ -1,4 +1,4 @@
-﻿@model List<_01_LampShadeQuery.Contracts.ProductCategory.ProductCategoryQueryModel>
+﻿@model _01_LampShadeQuery.MenuModel
 
 
 
@@ -23,9 +23,9 @@
                                 </li>
 
                                 <li class="menu-item-has-children">
-                                    <a href="#">محصولات</a>
+                                    <a >محصولات</a>
                                     <ul class="sub-menu">
-                                        @foreach(var item in Model)
+                                        @foreach(var item in Model.ProductCategories)
                                         {
                                             <li>
                                                 <a asp-page="/ProductCategory" asp-route-id="@item.Slug">@item.Name</a>
@@ -37,13 +37,17 @@
                                 </li>
 
                                 <li class="menu-item-has-children">
-                                    <a href="blog-left-sidebar.html">مقالات</a>
+                                    <a >مقالات</a>
                                     <ul class="sub-menu">
-                                        <li>
-                                            <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-                                        </li>
+                                        @foreach(var category in Model.ArticleCategories)
+                                        {
+                                            <li>
+                                                <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                            </li>
+                                        }
                                        
-                                        </li>
+                                       
+                                        
                                     </ul>
                                 </li>
 
@@ -253,7 +257,7 @@
                     <li class="menu-item-has-children">
                         <a href="#">محصولات</a>
                         <ul class="sub-menu">
-                            @foreach (var item in Model)
+                            @foreach (var item in Model.ProductCategories)
                             {
                                 <li>
                                     <a asp-page="/ProductCategory" asp-route-id="@item.Slug">@item.Name</a>

@@ -1,4 +1,6 @@
 using _0_Freamwork.Application;
+using BlogManagement.Infrastructure.Configuration;
+using CommentManagement.Infrastructure.Configuration;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Builder;
@@ -11,6 +13,8 @@ using ShopManagementConfiguration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 using System.Threading.Tasks;
 
 namespace ServiceHost
@@ -31,7 +35,10 @@ namespace ServiceHost
             ShopManagementBootstrapper.Configure(services, connectionString);
             DiscountManagementBootstrapper.Configure(services, connectionString);
             InventoryManagementBootstrapper.Configure(services, connectionString);
+            BlogManagementBootstrapper.Configure(services,connectionString);
+            CommentManagementBootstrapper.Configure(services, connectionString);
             services.AddTransient<IFileUploader,FileUploader>();
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
             services.AddRazorPages();
         }
 

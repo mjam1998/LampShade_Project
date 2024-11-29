@@ -19,7 +19,7 @@ namespace DiscountManagement.Application
         {
             var operation = new OperationResult();
             if (_customerDiscountRepository.Exists(x =>
-                    x.ProductId == command.ProductId && x.DiscountRate == command.DiscountRate))
+                    x.ProductId == command.ProductId && x.DiscountRate == command.DiscountRate&&x.EndDate==command.EndDate.ToGeorgianDateTime()))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
             var customerDiscount = new CustomerDiscount(command.ProductId,command.DiscountRate,
                 command.StartDate.ToGeorgianDateTime(),command.EndDate.ToGeorgianDateTime(),command.Reason);

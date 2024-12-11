@@ -4,7 +4,7 @@ using CommentManagement.Infrastructure.Efcore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-using ShopManagement.Infrastructure.Migrations;
+
 
 namespace ServiceHost.Pages
 {

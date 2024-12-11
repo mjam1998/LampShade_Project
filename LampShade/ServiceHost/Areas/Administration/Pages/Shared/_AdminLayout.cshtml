@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@using _0_Freamwork.Application
+
+@inject   _0_Freamwork.Application.IAuthHelper AuthHelper;
+@{
+    var CurrentAccount = AuthHelper.CurrentAccountInfo();
+}
+
+
+<!DOCTYPE html>
 <html  >
     <head >
         <meta charset="utf-8">
@@ -34,6 +42,7 @@
         <!-- Custom Files -->
         
         <link href="~/AdminTheme/assets/css/persian-datepicker.min.css" rel="stylesheet"  />
+    @RenderSection("Css", false)
     <link href="~/AdminTheme/assets/css/helper.css" rel="stylesheet" type="text/css" />
     <link href="~/AdminTheme/assets/css/style.css" rel="stylesheet" type="text/css" />
 
@@ -167,7 +176,7 @@
                         </div>
                         <div class="user-info">
                             <div class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> جان دو <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> @CurrentAccount.FullName <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile<div class="ripple-wrapper"></div></a></li>
                                     <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
@@ -176,7 +185,7 @@
                                 </ul>
                             </div>
                             
-                            <p class="text-muted m-0">مدیر سیستم</p>
+                            <p class="text-muted m-0">@Roles.GetBy(CurrentAccount.RoleId)</p>
                         </div>
                     </div>
                     <!--- Divider -->
@@ -186,22 +195,30 @@
                             <li>
                                 <a asp-page="/Index" class="waves-effect active"><i class="md md-home"></i><span> داشبورد </span></a>
                             </li>
-                        <li>
-                            <a asp-page="/Inventory/Index" class="waves-effect "><i class="md md-home"></i><span> انبارداری </span></a>
-                        </li>
+                        @if (AuthHelper.CurrentAccountRole() == Roles.Admin)
+                        {
+                            <li>
+                                <a asp-page="/Inventory/Index" class="waves-effect "><i class="md md-home"></i><span> انبارداری </span></a>
+                            </li>
+                        }
+                 
                         <li>
                             <a asp-page="/Comment/Index" class="waves-effect "><i class="md md-home"></i><span> نظرات </span></a>
                         </li>
+                        @if (AuthHelper.CurrentAccountRole() == Roles.Admin)
+                        {
                             <li class="has_sub">
                                 <a class="waves-effect"><i class="md md-mail"></i><span> فروشگاه </span><span class="pull-right"><i class="md md-add"></i></span></a>
                                 <ul class="list-unstyled">
-                                <li><a asp-page="/Shop/Slides/Index"> اسلایدر </a></li>
+                                    <li><a asp-page="/Shop/Slides/Index"> اسلایدر </a></li>
                                     <li><a asp-page="/Shop/ProductCategories/Index">گروه محصولات</a></li>
-                                <li><a asp-page="/Shop/Products/Index"> محصولات</a></li>
+                                    <li><a asp-page="/Shop/Products/Index"> محصولات</a></li>
                                     <li><a asp-page="/Shop/ProductPictures/Index"> عکس محصولات</a></li>
-                               
+
                                 </ul>
                             </li>
+                       
+                      
                         <li class="has_sub">
                             <a class="waves-effect"><i class="md md-mail"></i><span> سیستم تخفیفات </span><span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
@@ -210,6 +227,15 @@
                                 
                             </ul>
                         </li>
+                            <li class="has_sub">
+                                <a class="waves-effect"><i class="md md-mail"></i><span> سیستم کاربران </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a asp-page="/Accounts/Account/Index"> کاربران </a></li>
+                                    <li><a asp-page="/Accounts/Role/Index"> نقش ها</a></li>
+
+                                </ul>
+                            </li>
+                        }
                         </li>
                         <li class="has_sub">
                             <a class="waves-effect"><i class="md md-mail"></i><span> سیستم مقالات </span><span class="pull-right"><i class="md md-add"></i></span></a>
@@ -219,7 +245,10 @@
 
                             </ul>
                         </li>
-                        
+                       
+                        <li>
+                            <a asp-page="/Account" asp-page-handler="Logout" class="waves-effect "><i class="fa fa-sign-out"></i><span> خروج </span></a>
+                        </li>
                             
                         </ul>
                         <div class="clearfix"></div>

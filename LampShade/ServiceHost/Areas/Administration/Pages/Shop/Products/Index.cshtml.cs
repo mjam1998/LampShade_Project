@@ -1,4 +1,5 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,8 +9,12 @@ using ShopManagement.Application.Contracts.ProductCategoryAppContract;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.Products
 {
+    //برای دسترسی صفحه به صفحه این کار را میکنیم
+   // [Authorize(Roles = "1")]
     public class IndexModel : PageModel
     {
+      
+
         [TempData]
         public string Message { get; set; }
         public List<ProductViewModel> Products;

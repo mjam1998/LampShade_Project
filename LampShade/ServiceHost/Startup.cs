@@ -1,4 +1,7 @@
 ﻿using _0_Framework.Application;
+using _0_Framework.Application.Email;
+using _0_Framework.Application.Sms;
+using _0_Framework.Application.ZarinPal;
 using _0_Freamwork.Application;
 using _01_LampShadeQuery.Contracts;
 using _01_LampShadeQuery.Query;
@@ -7,6 +10,7 @@ using BlogManagement.Infrastructure.Configuration;
 using CommentManagement.Infrastructure.Configuration;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
+using InventoryManagement.Peresentaition.Api;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -15,6 +19,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Shopmanagement.Infrastructure.InventoryAcl;
+using ShopManagement.Domain.Service;
+using ShopManagement.Persentaition.Api;
 using ShopManagementConfiguration;
 using System;
 using System.Collections.Generic;
@@ -45,6 +52,9 @@ namespace ServiceHost
             BlogManagementBootstrapper.Configure(services,connectionString);
             CommentManagementBootstrapper.Configure(services, connectionString);
             AccountManagementBootstrapper.Configure(services, connectionString);
+            services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
+            services.AddTransient<IZarinPalFactory,ZarinPalFactory>();
+            services.AddTransient<IEmailService,EmailService>();
             //برای ساخت کوکی
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -59,7 +69,7 @@ namespace ServiceHost
                     o.LogoutPath = new PathString("/Account");
                     o.AccessDeniedPath = new PathString("/AccessDenied");
                 });
-
+            services.AddTransient<ISmsService, SmsService>();
             services.AddTransient<IFileUploader,FileUploader>();
             services.AddSingleton<IPasswordHasher,PasswordHasher>();   
             services.AddTransient<ICartCalculatorService,CartCalculatorService>();
@@ -76,7 +86,9 @@ namespace ServiceHost
               options.AddPolicy("Account", builder => builder.RequireRole(new List<string> { Roles.Admin }));
               options.AddPolicy("Inventory", builder => builder.RequireRole(new List<string> { Roles.Admin }));
 
-          }); 
+          });
+
+            services.AddCors(options => options.AddPolicy("MyPolicy", builder => builder.WithOrigins("https://localhost:5002")));//اجازه دسترسی دامین های دیگر با api  های ما
 
             //اینجایک مجوز برای ناحیه ادمینستریشن درست میکنیم که مجوز ادمین اریا
             //بالا اجازه دسترسی به ان را دارد و کل روت را برایش تعیین میکنیم در پارامتر دوم
@@ -89,7 +101,10 @@ namespace ServiceHost
                 options.Conventions.AuthorizeAreaFolder("Administration", "/Inventory", "Inventory");
 
 
-            } );
+            } )
+                .AddApplicationPart(typeof(ProductController).Assembly)
+                .AddApplicationPart(typeof(InventoryController).Assembly)//تمام کنترلر های api  را در ان ماژول اد میکند
+               .AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -117,7 +132,7 @@ namespace ServiceHost
             app.UseCookiePolicy();
 
             app.UseRouting();
-
+            app.UseCors("MyPolicy");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

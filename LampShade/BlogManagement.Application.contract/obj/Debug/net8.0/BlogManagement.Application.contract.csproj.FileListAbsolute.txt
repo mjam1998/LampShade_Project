@@ -1,0 +1,16 @@
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\bin\Debug\net8.0\BlogManagement.Application.contract.deps.json
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\bin\Debug\net8.0\BlogManagement.Application.contract.dll
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\bin\Debug\net8.0\BlogManagement.Application.contract.pdb
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\bin\Debug\net8.0\0_Freamwork.dll
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\bin\Debug\net8.0\0_Freamwork.pdb
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\BlogManagement.Application.contract.csproj.AssemblyReference.cache
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\BlogManagement.Application.contract.GeneratedMSBuildEditorConfig.editorconfig
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\BlogManagement.Application.contract.AssemblyInfoInputs.cache
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\BlogManagement.Application.contract.AssemblyInfo.cs
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\BlogManagement.Application.contract.csproj.CoreCompileInputs.cache
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\BlogManagement.Application.contract.sourcelink.json
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\BlogMana.7C99C672.Up2Date
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\BlogManagement.Application.contract.dll
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\refint\BlogManagement.Application.contract.dll
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\BlogManagement.Application.contract.pdb
+F:\project .net\LampShade\LampShade\BlogManagement.Application.contract\obj\Debug\net8.0\ref\BlogManagement.Application.contract.dll

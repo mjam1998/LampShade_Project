@@ -1,0 +1,16 @@
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\bin\Debug\net8.0\ShopManagement.Application.Contracts.deps.json
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\bin\Debug\net8.0\ShopManagement.Application.Contracts.dll
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\bin\Debug\net8.0\ShopManagement.Application.Contracts.pdb
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\bin\Debug\net8.0\0_Freamwork.dll
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\bin\Debug\net8.0\0_Freamwork.pdb
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ShopManagement.Application.Contracts.csproj.AssemblyReference.cache
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ShopManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ShopManagement.Application.Contracts.AssemblyInfoInputs.cache
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ShopManagement.Application.Contracts.AssemblyInfo.cs
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ShopManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ShopManagement.Application.Contracts.sourcelink.json
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ShopMana.6F35FA60.Up2Date
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ShopManagement.Application.Contracts.dll
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\refint\ShopManagement.Application.Contracts.dll
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ShopManagement.Application.Contracts.pdb
+F:\project .net\LampShade\LampShade\ShopManagement.Application.Contracts\obj\Debug\net8.0\ref\ShopManagement.Application.Contracts.dll

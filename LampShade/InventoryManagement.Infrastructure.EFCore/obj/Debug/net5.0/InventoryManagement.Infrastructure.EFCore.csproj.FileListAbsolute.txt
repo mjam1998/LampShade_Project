@@ -27,3 +27,9 @@ F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\ob
 F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\obj\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
 F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\obj\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.genruntimeconfig.cache
 F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\InventoryManagement.Infrastructure.EFCore.dll
+F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.dll
+F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.pdb
+F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
+F:\project .net\LampShade\LampShade\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb

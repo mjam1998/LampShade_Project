@@ -1,5 +1,7 @@
 ﻿
 
+using _01_LampShadeQuery.Contracts.Inventory;
+using _01_LampShadeQuery.Query;
 using InventoryManagement.Application;
 using InventoryManagement.Application.Contract.InventoryAppContract;
 using InventoryManagement.Domain.InventoryAgg;
@@ -16,6 +18,8 @@ namespace InventoryManagement.Infrastructure.Configuration
         {
             services.AddTransient<IInventoryRepository,InventortRepository>();
             services.AddTransient<IInventoryApplication, InventoryApplication>();
+
+            services.AddTransient<IInventoryQuery, InventoryQuery>();
 
             services.AddDbContext<InventoryContext>(x=>x.UseSqlServer(connectionString));
 

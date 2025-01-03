@@ -1,10 +1,12 @@
 ﻿const cookieName = "cart-items";
 
-function addToCart(id, name, price, picture) {
+function addToCart(id, name, price, picture,slug) {
+  
     let products = $.cookie(cookieName);
     if (products === undefined) {
         products = [];
     } else {
+        //کوکی مقدار استرینگ دارد که باید به ارایه ای از ابجمت تبدیل شود
         products = JSON.parse(products);
     }
 
@@ -12,18 +14,20 @@ function addToCart(id, name, price, picture) {
     const currentProduct = products.find(x => x.id === id);
     if (currentProduct !== undefined) {
         products.find(x => x.id === id).count = parseInt(currentProduct.count) + parseInt(count);
-    } else {
+    } else {//چک میکند اگر کوکی از قبل وجود نداشت یک شی به اسم product درست میکند و به پروداکتس اد میکند با ورودی هایی که گرفتیم
         const product = {
             id,
             name,
             unitPrice: price,
             picture,
+            slug,
             count
         }
 
         products.push(product);
+       
     }
-
+    //در اخر کوکی را مقدار دهی میکند و مسیر و تاریخ انتضا دو روزه میدهد
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
 }
@@ -32,6 +36,7 @@ function updateCart() {
     let products = $.cookie(cookieName);
     products = JSON.parse(products);
     $("#cart_items_count").text(products.length);
+    $("#cart_items_count_mobile").text(products.length);
     const cartItemsWrapper = $("#cart_items_wrapper");
     cartItemsWrapper.html('');
     products.forEach(x => {
@@ -40,14 +45,14 @@ function updateCart() {
                                 <i class="ion-android-close"></i>
                             </a>
                             <div class="image">
-                                <a href="single-product.html">
+                                <a asp-page="/Product" asp-route-id="${x.slug}">
                                     <img src="/ProductPictures/${x.picture}"
                                          class="img-fluid" alt="">
                                 </a>
                             </div>
                             <div class="content">
                                 <p class="product-title">
-                                    <a href="single-product.html">محصول: ${x.name}</a>
+                                    <a asp-page="/Product" asp-route-id="${x.slug}">محصول: ${x.name}</a>
                                 </p>
                                 <p class="count">تعداد: ${x.count}</p>
                                 <p class="count">قیمت واحد: ${x.unitPrice}</p>
@@ -57,6 +62,45 @@ function updateCart() {
         cartItemsWrapper.append(product);
     });
 }
+
+//function updateCartExample() {
+//    let products = $.cookie(cookieName);
+//    products = JSON.parse(products);
+//    const itemWrapper = $("items-wrapper");
+//    itemWrapper.html('');
+//    products.forEach(x => {
+//        const product = `    <tr>
+//                                                <td class="pro-thumbnail">
+//                                                    <a asp-page="/Product" asp-route-id="${x.slug}">
+//                                                        <img src="~/ProductPictures/${x.picture}" class="img-fluid" >
+//                                                    </a>
+//                                                </td>
+//                                                <td class="pro-title">
+//                                                    <a asp-page="/Product" asp-route-id="${x.slug}">${x.name}</a>
+//                                                </td>
+//                                                <td class="pro-price">
+//                                                    <span>
+//                                                        ${x.unitPrice}
+//                                                    </span>
+//                                                </td>
+//                                                <td class="pro-quantity">
+//                                                    <div class="quantity-selection">
+//                                                        <input type="number" value="${x.count}" min="1">
+//                                                    </div>
+//                                                </td>
+//                                                <td class="pro-subtotal">
+//                                                    <span>@item.TotalItemPrice.ToMoney()</span>
+//                                                </td>
+//                                                <td class="pro-remove">
+//                                                    <a onclick="removeFromCart('${x.id}')">
+//                                                        <i class="fa fa-trash-o"></i>
+//                                                    </a>
+//                                                </td>
+//                                            </tr>`;
+//        itemWrapper.html(product);
+         
+//    })
+//}
 
 function removeFromCart(id) {
     let products = $.cookie(cookieName);
@@ -117,7 +161,7 @@ function changeCartItemCount(id, totalId, count) {
 
 
     const settings = {
-        "url": "https://localhost:5001/api/inventory",
+        "url": "https://localhost:44391/api/inventory",
         "method": "POST",
         "timeout": 0,
         "headers": {

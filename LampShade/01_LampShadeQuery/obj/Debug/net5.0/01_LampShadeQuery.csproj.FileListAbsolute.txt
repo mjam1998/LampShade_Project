@@ -44,3 +44,9 @@ F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\CommentMa
 F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\CommentManagement.Domain.pdb
 F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\CommentManagement.Infrastructure.Efcore.pdb
 F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
+F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\AccountManagement.Domain.dll
+F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
+F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\AccountManagement.Domain.pdb
+F:\project .net\LampShade\LampShade\01_LampShadeQuery\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb

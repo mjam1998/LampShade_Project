@@ -5,6 +5,7 @@ using _01_LampShadeQuery.Contracts.Slide;
 using _01_LampShadeQuery.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+
 using ShopManagement.Application;
 using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Application.Contracts.ProductAppContract;
@@ -15,8 +16,10 @@ using ShopManagement.Domain.OrderAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
+using ShopManagement.Domain.Service;
 using ShopManagement.Domain.SlideAgg;
 using ShopManagement.Infrastructure;
+using ShopManagement.Infrastructure.AccountAcl;
 using ShopManagement.Infrastructure.Repository;
 
 namespace ShopManagementConfiguration
@@ -43,6 +46,8 @@ namespace ShopManagementConfiguration
             //برای اینکه میخواهیم کوکی که برای پرداخت نهایی استفاده میکنیم را تغییر ندهند و در طول استفاده برنامه ثابت بماند
             services.AddSingleton<ICartService,CartService>();
 
+            services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
+           
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             services.AddTransient<IProductQuery, ProductQuery>();

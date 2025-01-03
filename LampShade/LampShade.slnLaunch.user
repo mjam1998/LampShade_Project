@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "ServiceHost\\ServiceHost.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "BlogManagement.Peresentaition.Api\\BlogManagement.Peresentaition.Api.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

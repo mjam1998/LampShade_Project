@@ -11,5 +11,6 @@ namespace AccountManagement.Domain.AccountAgg
         EditAccount GetDetails(long id);
         Account GetBy(string username);
         List<AccountViewModel> Search(AccountSearchModel searchModel);
+        List<AccountViewModel> GetAccounts();
     }
 }

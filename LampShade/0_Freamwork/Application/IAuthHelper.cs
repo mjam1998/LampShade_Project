@@ -10,5 +10,6 @@ namespace _0_Freamwork.Application
         string CurrentAccountRole();
         AuthViewModel CurrentAccountInfo();
         long CurrentAccountId();
+        string CurrentAccountMobile();
     }
 }

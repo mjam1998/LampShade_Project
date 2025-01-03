@@ -42,12 +42,14 @@ namespace ShopManagement.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("IssueTrackingNo")
-                        .IsRequired()
                         .HasMaxLength(8)
                         .HasColumnType("nvarchar(8)");
 
                     b.Property<double>("PayAmount")
                         .HasColumnType("float");
+
+                    b.Property<int>("PaymentMethod")
+                        .HasColumnType("int");
 
                     b.Property<long>("RefId")
                         .HasColumnType("bigint");

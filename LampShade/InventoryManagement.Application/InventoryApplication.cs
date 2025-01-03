@@ -9,10 +9,11 @@ namespace InventoryManagement.Application
     public class InventoryApplication : IInventoryApplication
     {
         private readonly IInventoryRepository _inventortRepository;
-
-        public InventoryApplication(IInventoryRepository inventortRepository)
+        private readonly IAuthHelper _authHelper;
+        public InventoryApplication(IInventoryRepository inventortRepository, IAuthHelper authHelper)
         {
             _inventortRepository = inventortRepository;
+            _authHelper = authHelper;
         }
 
         public OperationResult Create(CreateInventory ccommand)
@@ -55,7 +56,7 @@ namespace InventoryManagement.Application
             var inventory = _inventortRepository.Get(ccommand.InventoryId);
             if (inventory == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
-            const long operatorId = 1;
+            var operatorId = _authHelper.CurrentAccountId();
             inventory.Increase(ccommand.Count, operatorId, ccommand.Description);
             _inventortRepository.SaveChanges();
             return operation.Succedded();
@@ -67,7 +68,7 @@ namespace InventoryManagement.Application
             var inventory = _inventortRepository.Get(ccommand.InventoryId);
             if (inventory == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
-            const long operatorId = 1;
+            var operatorId = _authHelper.CurrentAccountId();
             inventory.Reduce(ccommand.Count, operatorId, ccommand.Description,0);
             _inventortRepository.SaveChanges();
             return operation.Succedded();
@@ -76,7 +77,7 @@ namespace InventoryManagement.Application
         public OperationResult ReDuce(List<ReduceInventory> ccommand)
         {
             var operation = new OperationResult();
-            const long operatorId = 1;
+            var operatorId = _authHelper.CurrentAccountId();
             foreach (var item in ccommand)
             {
                 var inventory=_inventortRepository.GetBy(item.ProductId);

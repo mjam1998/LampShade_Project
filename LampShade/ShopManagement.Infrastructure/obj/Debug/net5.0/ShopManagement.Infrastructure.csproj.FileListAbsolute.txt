@@ -21,3 +21,9 @@ F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\obj\Debug\net5
 F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\obj\Debug\net5.0\ShopManagement.Infrastructure.pdb
 F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\obj\Debug\net5.0\ShopManagement.Infrastructure.genruntimeconfig.cache
 F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\obj\Debug\net5.0\ref\ShopManagement.Infrastructure.dll
+F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\bin\Debug\net5.0\AccountManagement.Domain.dll
+F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\bin\Debug\net5.0\AccountManagement.Domain.pdb
+F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
+F:\project .net\LampShade\LampShade\ShopManagement.Infrastructure\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb

@@ -47,6 +47,13 @@ namespace _0_Framework.Application
 
         }
 
+        public string CurrentAccountMobile()
+        {
+            if (IsAuthenticated())
+                return _contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == "Mobile").Value;
+            return null;
+        }
+
         //این متد نقش جاری را به ما میدهد
         public string CurrentAccountRole()
         {
@@ -114,7 +121,8 @@ namespace _0_Framework.Application
                 new Claim("AccountId", account.Id.ToString()),
                 new Claim(ClaimTypes.Name, account.FullName),
                 new Claim(ClaimTypes.Role, account.RoleId.ToString()),
-                new Claim("Username", account.UserName), // Or Use ClaimTypes.NameIdentifier
+                new Claim("Username", account.UserName),  // Or Use ClaimTypes.NameIdentifier
+                new Claim("Mobile",account.Mobile)
                
                 
             };

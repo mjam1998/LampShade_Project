@@ -1,0 +1,16 @@
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\bin\Debug\net9.0\AccountManagement.Application.Contract.deps.json
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\bin\Debug\net9.0\AccountManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\bin\Debug\net9.0\AccountManagement.Application.Contract.pdb
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\bin\Debug\net9.0\0_Freamwork.dll
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\bin\Debug\net9.0\0_Freamwork.pdb
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\AccountManagement.Application.Contract.csproj.AssemblyReference.cache
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\AccountManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\AccountManagement.Application.Contract.AssemblyInfoInputs.cache
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\AccountManagement.Application.Contract.AssemblyInfo.cs
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\AccountManagement.Application.Contract.csproj.CoreCompileInputs.cache
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\AccountManagement.Application.Contract.sourcelink.json
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\AccountM.563BDC4F.Up2Date
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\AccountManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\refint\AccountManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\AccountManagement.Application.Contract.pdb
+F:\project .net\LampShade\LampShade\AccountManagement.Application.Contract\obj\Debug\net9.0\ref\AccountManagement.Application.Contract.dll

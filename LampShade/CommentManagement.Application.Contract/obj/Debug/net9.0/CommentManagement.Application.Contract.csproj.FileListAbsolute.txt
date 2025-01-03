@@ -1,0 +1,16 @@
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\bin\Debug\net9.0\CommentManagement.Application.Contract.deps.json
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\bin\Debug\net9.0\CommentManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\bin\Debug\net9.0\CommentManagement.Application.Contract.pdb
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\bin\Debug\net9.0\0_Freamwork.dll
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\bin\Debug\net9.0\0_Freamwork.pdb
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\CommentManagement.Application.Contract.csproj.AssemblyReference.cache
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\CommentManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\CommentManagement.Application.Contract.AssemblyInfoInputs.cache
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\CommentManagement.Application.Contract.AssemblyInfo.cs
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\CommentManagement.Application.Contract.csproj.CoreCompileInputs.cache
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\CommentManagement.Application.Contract.sourcelink.json
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\CommentM.55EE39F3.Up2Date
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\CommentManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\refint\CommentManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\CommentManagement.Application.Contract.pdb
+F:\project .net\LampShade\LampShade\CommentManagement.Application.Contract\obj\Debug\net9.0\ref\CommentManagement.Application.Contract.dll

@@ -74,6 +74,21 @@ namespace AccountManagement.Application
             return operation.Succedded();
         }
 
+        public AuthViewModel GetAccountBy(long id)
+        {
+            var account = _accountRepository.Get(id);
+            return new AuthViewModel
+            {
+                FullName = account.FullName,
+                Mobile = account.Mobile
+            };
+        }
+
+        public List<AccountViewModel> GetAccounts()
+        {
+            return _accountRepository.GetAccounts();
+        }
+
         public EditAccount GetDetails(long id)
         {
            return _accountRepository.GetDetails(id);
@@ -90,7 +105,7 @@ namespace AccountManagement.Application
             if(!result.Verified)
                
                 return operation.Failed(ApplicationMessages.WrongPassword);
-            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.FullName, account.UserName);
+            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.FullName, account.UserName,account.Mobile);
             _authHelper.Signin(authViewModel);
 
             return operation.Succedded();

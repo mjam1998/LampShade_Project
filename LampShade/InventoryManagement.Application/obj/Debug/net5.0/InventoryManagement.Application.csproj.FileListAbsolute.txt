@@ -26,3 +26,9 @@ F:\project .net\LampShade\LampShade\InventoryManagement.Application\obj\Debug\ne
 F:\project .net\LampShade\LampShade\InventoryManagement.Application\obj\Debug\net5.0\refint\InventoryManagement.Application.dll
 F:\project .net\LampShade\LampShade\InventoryManagement.Application\obj\Debug\net5.0\InventoryManagement.Application.pdb
 F:\project .net\LampShade\LampShade\InventoryManagement.Application\obj\Debug\net5.0\ref\InventoryManagement.Application.dll
+F:\project .net\LampShade\LampShade\InventoryManagement.Application\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+F:\project .net\LampShade\LampShade\InventoryManagement.Application\bin\Debug\net5.0\AccountManagement.Domain.dll
+F:\project .net\LampShade\LampShade\InventoryManagement.Application\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+F:\project .net\LampShade\LampShade\InventoryManagement.Application\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
+F:\project .net\LampShade\LampShade\InventoryManagement.Application\bin\Debug\net5.0\AccountManagement.Domain.pdb
+F:\project .net\LampShade\LampShade\InventoryManagement.Application\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb

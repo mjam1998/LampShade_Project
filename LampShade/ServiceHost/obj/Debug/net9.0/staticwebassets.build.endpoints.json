@@ -70587,7 +70587,7 @@
       ]
     },
     {
-      "Route": "Theme/assets/img/logo.e8sf9py7fw.png",
+      "Route": "Theme/assets/img/logo.57o8c5ju3x.png",
       "AssetFile": "Theme/assets/img/logo.png",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70601,7 +70601,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "606"
+          "Value": "3387"
         },
         {
           "Name": "Content-Type",
@@ -70609,21 +70609,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UjYRyrfZn8DefO9vfo8OaieQFx2zFKabzpZJKPGeiLc=\""
+          "Value": "\"gZxfKQjUkFoAtZydZgqAbU5DmxWwHwasGrw89TJU7Hc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2019 09:14:10 GMT"
+          "Value": "Sun, 16 Feb 2025 21:08:33 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "e8sf9py7fw"
+          "Value": "57o8c5ju3x"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UjYRyrfZn8DefO9vfo8OaieQFx2zFKabzpZJKPGeiLc="
+          "Value": "sha256-gZxfKQjUkFoAtZydZgqAbU5DmxWwHwasGrw89TJU7Hc="
         },
         {
           "Name": "label",
@@ -70646,7 +70646,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "606"
+          "Value": "3387"
         },
         {
           "Name": "Content-Type",
@@ -70654,17 +70654,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UjYRyrfZn8DefO9vfo8OaieQFx2zFKabzpZJKPGeiLc=\""
+          "Value": "\"gZxfKQjUkFoAtZydZgqAbU5DmxWwHwasGrw89TJU7Hc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2019 09:14:10 GMT"
+          "Value": "Sun, 16 Feb 2025 21:08:33 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UjYRyrfZn8DefO9vfo8OaieQFx2zFKabzpZJKPGeiLc="
+          "Value": "sha256-gZxfKQjUkFoAtZydZgqAbU5DmxWwHwasGrw89TJU7Hc="
         }
       ]
     },
